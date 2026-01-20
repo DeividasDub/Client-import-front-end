@@ -1,0 +1,58 @@
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    min-width: 260px;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #2c6bed;
+    background: #2c6bed;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tableWrap {
+    overflow: auto;
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background: #fafafa;
+}
+
+.msg.err {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #ffe9e9;
+    border: 1px solid #f0b7b7;
+}
+
+.meta {
+    color: #666;
+}

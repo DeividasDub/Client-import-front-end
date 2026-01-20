@@ -1,0 +1,12 @@
+<div class="card">
+    <h2>Import Clients</h2>
+    <p>Select <b>klientai.json</b> file</p>
+
+    <input type="file" accept=".json,application/json" (change)="onFileChange($event)" />
+    <button (click)="import()" [disabled]="loading">Import</button>
+
+    <p *ngIf="selectedFile">Selected file: <b>{{ selectedFile.name }}</b></p>
+
+    <div class="msg ok" *ngIf="message">{{ message }}</div>
+    <div class="msg err" *ngIf="error">{{ error }}</div>
+</div>

@@ -1,0 +1,33 @@
+<h2>Clients</h2>
+
+<div class="row">
+    <button (click)="load()" [disabled]="loading">Load</button>
+    <span class="meta">Records: {{ clients.length }}</span>
+</div>
+
+<div class="msg err" *ngIf="error">{{ error }}</div>
+
+<div class="tableWrap">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Postcode</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let client of clients">
+                <td>{{ client.id }}</td>
+                <td>{{ client.name }}</td>
+                <td>{{ client.address }}</td>
+                <td>{{ client.postCode }}</td>
+                <td>{{ client.createdAtUtc | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+                <td>{{ client.updatedAtUtc | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

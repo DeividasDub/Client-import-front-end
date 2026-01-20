@@ -1,0 +1,8 @@
+<div class="card">
+    <h2>Update Postcodes</h2>
+
+    <button (click)="run()" [disabled]="loading">Update Postcodes</button>
+
+    <div class="msg ok" *ngIf="message">{{ message }}</div>
+    <div class="msg err" *ngIf="error">{{ error }}</div>
+</div>

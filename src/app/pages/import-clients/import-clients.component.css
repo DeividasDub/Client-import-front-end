@@ -1,0 +1,30 @@
+button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #2c6bed;
+    background: #2c6bed;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.msg {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.msg.ok {
+    background: #e9ffe9;
+    border: 1px solid #b7f0b7;
+}
+
+.msg.err {
+    background: #ffe9e9;
+    border: 1px solid #f0b7b7;
+}
